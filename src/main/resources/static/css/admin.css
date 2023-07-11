@@ -1,0 +1,198 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #dfe9f5;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.navbar{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.add
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.add table
+{
+ 
+    width: 100%;
+    font-weight: bold;
+    
+}
+.add table input , .add table select
+{
+    width: 90%;
+    margin: 5px;
+    height: 35px;
+    border-radius: 4px;
+    background-color:rgb(230, 230, 230);
+}
+.add table .label
+{
+    font-size: 0.8em;
+    width: 15%;
+    padding-left: 10px;
+}
+.button
+{
+    text-align: center;
+    height: 50px;
+}
+.button #submit
+{
+    font-weight: bold;
+    width: 25%;
+    height: 70%;
+    margin: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #90be6d;
+    font-size: 1.2em;
+    letter-spacing:0.15em ;
+}
+.affichage
+{
+    background-color: white;
+    margin-top: 10px;
+    height: 40%;
+    padding-top: 10px;
+      box-shadow: 35px 20px 35px rgba(1, 1, 1, 0.1);
+      border-radius: 10px;
+}
+.affichage table 
+{
+	
+	text-align: center;
+    width: 95%;
+   margin-left: 2.5%;
+   background-color: #011627;
+}
+.affichage table,.affichage  th,.affichage  td {
+  border: 2px solid #011627;
+  border-radius: 5px;
+  
+}
+.affichage  th,.affichage  td
+{
+	background-color: white;
+}
+.pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 22px;
+    width: 100%;
+    margin-top: 10px;
+}
+.pagination{
+    width: 500px;
+    border-radius: 35px;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #011627;
+}
+.pagination a{
+    padding: 9px 18px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    color: #dfe9f5;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+.control{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(200, 200, 239);
+    border: none;
+    cursor: pointer;
+    padding: 2px 2px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out ;
+}
+.disabled{
+    color: rgb(192, 192, 192);
+    cursor: default;
+}
+.control:not(.disabled):hover,.pageNumbers a:hover{
+    background-color: rgb(192, 192, 192);
+    color: white;
+}
+a.active{
+    background-color: rgb(85, 83, 83);
+    color: white;
+}
+.hidden{
+    display: none;
+}
